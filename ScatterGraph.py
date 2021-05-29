@@ -3,7 +3,7 @@ import plotly.express as px
 
 df = pd.read_csv("data.csv")
 
-fig =px.line(df,    x="date",
+fig =px.scatter(df,    x="date",
                         y="cases",
                         color="country"
             )
